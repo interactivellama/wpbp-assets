@@ -1,0 +1,53 @@
+// ------------------------------------------  
+// MEDIA QUERIES
+// ------------------------------------------*/
+
+// breakpoints
+@phoneValueMax: 599px;
+@tabletPValue: 768px;
+@desktopValue: 768px;
+@desktopWideValue: 940px;
+
+//modified variables
+@desktopValueMinusOne: @desktopValue - 1px;
+@desktopWideValueMinusOne: @desktopWideValue - 1px;
+@phoneValueMin: 320px;
+@phoneValuePlusOne: (320px + 1px);
+@tabletPValueMinusOne: @tabletPValue - 1px;
+@tabletPValuePlusOne: @tabletPValue + 1px;
+@tabletValueMin: @phoneValueMax + 1px;
+
+// actual queries
+@phone: ~"screen and (max-width: @{phoneValueMax} )";
+@phoneP: ~"screen and (max-width: @{phoneValueMin}";
+@phoneL: ~"screen and (min-width: @{phoneValuePlusOne}) and (max-width: @{phoneValueMax}px)";
+
+@phoneAndTablet: ~"screen and (max-width: @{tabletPValue})";
+@tablet: ~"screen and (min-width: @{tabletValueMin}) and (max-width: @{desktopValueMinusOne})";
+@tabletUp: ~"screen and (min-width: @{tabletValueMin})";
+@tabletP: ~"screen and (min-width: @{tabletValueMin}) and (max-width: @{tabletPValue})";
+@tabletPUp: ~"screen and (min-width: @{tabletPValue})";
+@tabletPDown: ~"screen and (max-width: @{tabletPValueMinusOne})";
+@tabletL: ~"screen and (min-width: @{tabletPValuePlusOne}) and (max-width: 1024px)";
+
+@desktop: ~"screen and (min-width: @{desktopValue})";
+@notDesktop: ~"screen and (max-width: @{desktopValueMinusOne})";
+@desktopWide: ~"screen and (min-width: @{desktopWideValue})";
+@notDesktopWide: ~"screen and (max-width: @{@desktopWideValueMinusOne})";
+
+/* EXAMPLE USE:
+
+ GOOD using variable:
+ @media all and (max-width: @tabletWidth) {
+   body {
+     
+   }
+ }
+ 
+ BETTER with embedded media queries:
+ body {
+ 	@media @tablet {
+ 		background: #000;
+ 	}
+ }
+*/

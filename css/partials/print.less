@@ -1,0 +1,61 @@
+/*------------------------------------------  
+=print
+------------------------------------------*/
+
+@media print { 
+
+	body {
+		background: aqua;
+	}
+
+
+	* {
+	    color: #444!important;
+	    text-shadow: none;
+	}
+	
+	/* no background */
+	body, #main {
+		background: transparent!important;
+	}
+  	
+	/* hide */
+
+	.screen,
+	.menu,
+	#sidebar,
+	.edit-link,
+	#action {    display: none!important; }
+	
+	.navigation,
+	#social {    display: none!important; }
+
+	#primary {
+		width: 100%;
+	}
+
+	/* add  URL to all links: MUST BE FIRST! */
+
+.entry-content a[href]:after {
+	    content: " (/"attr(href) ") ";
+	    font-size: 90%;
+	}
+
+	/* override external links no prefix */
+
+	.entry-content a[href^=http]:after {    content: " (" attr(href) ") "; }
+
+	/* add  URL to email links*/
+
+	#primary a[href^=mail]:after,
+	a[href^=mail]:after,
+	a[href^=mail]:after {    content: " (" attr(href) ") "; }
+
+	pre,
+	blockquote {
+	    border: 1px solid #999;
+	    page-break-inside: avoid;
+	}
+
+	img {    page-break-inside: avoid; }
+}

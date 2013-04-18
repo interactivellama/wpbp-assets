@@ -1,0 +1,210 @@
+/*------------------------------------------  
+=forms
+------------------------------------------*/
+
+.frm_form_field.frm_right_half, .frm_form_field.frm_last_half, .frm_form_field.frm_right_fourth, .frm_form_field.frm_left_half, .frm_form_field.frm_first_half, .frm_form_field.frm_fourth {	
+
+	@media @phone {
+		float: none;
+		width: 100%;
+	}
+}
+
+.frm_form_field	{	
+	.group;
+		padding-right: 30px;
+		
+		@media @phone {	
+
+			padding-right: 0;
+		}
+	}
+	
+#frm_field_97_container {	
+	padding-right: 0px;
+}
+
+.frm_fullwidth {
+	width: 100%;	
+}
+	
+.frm_radio {	
+	float: left;
+	display: inline-block;
+	width: 25%;
+	padding-right: 20px;
+	padding-bottom: 10px;
+	
+	@media @notDesktop {	
+		width: 33%;	
+	}
+	
+	@media screen and (max-width: 880px) {	
+		width: 49%;	
+	}
+	
+	@media screen and (max-width: 500px) {	
+		width: 100%;	
+	}
+	
+	label {	
+		cursor: pointer;	
+	}
+	
+}
+	
+.frm_checkbox {	
+	float: left;
+	width: 50%;
+	display: inline-block;
+	padding-right: 20px;	
+	
+	@media @notDesktop {	
+		width: 33%;	
+	}
+	
+	@media screen and (max-width: 880px) {	
+		width: 49%;	
+	}
+	
+	@media screen and (max-width: 500px) {	
+		width: 100%;	
+	}
+
+	
+	label {	
+		cursor: pointer;
+	}
+	
+}
+
+.submit input {	
+	.btn;
+}
+	
+#frm_field_133_container .frm_checkbox {	
+	width: 100%;	
+}
+
+// end form
+
+
+.page-template-page-contact-php {	
+
+	.your-information {
+
+	 .frm_form_field	{	
+			width: 48%;
+			display: inline-block;
+			
+			@media @phone {	
+				width: 100%;	
+			}
+		}
+	}
+	
+	.frm_forms h2 {	
+		color: #000;
+		font-size: 1em;	
+		text-transform: uppercase;
+		border-bottom: 1px solid #ccc;
+		padding-bottom: 10px;
+		margin-bottom: 10px;
+	}	
+}
+
+.connect, .connect:visited {
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 20px;
+	.box-shadow-default;
+	background-color: @red;
+	#3l.gradient(lighten(@red, 10%), hsla(hue(@red), saturation(@red), lightness(@red), .8));
+	.nofilter;
+	color: #fff;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-bottom: 15px;
+	padding-top: 15px;
+	font-family: @brandFont;
+	font-weight: 400;
+	.fontsize(2.1);
+	text-transform: uppercase;
+	text-decoration: none;
+	letter-spacing: 0.08em;
+	display: block;
+	width: 100%;
+	text-align: center;
+	clear: both;
+	#llama.transition;
+	
+		  
+	&:hover, &:hover:visited {
+		#llama.transition;
+		background-color: darken(@red, 40%);
+		color: #fff;
+		text-shadow: 1px 1px 3px darken(@red, 10%);
+	}
+
+	span {	
+		display: none;
+		
+		@media @desktopWide {
+			display: inline;
+		}	
+	}
+	
+	.lt-ie9 & {	
+		background-color: @red;
+		
+		&:hover, &:hover:visited {
+			background-color: darken(@red, 5%);
+		}
+	}
+	
+	.lt-ie8 & {	
+		width: 250px;
+	}
+			
+}
+
+.leadershipwrapper {	
+		ul {	
+			list-style: none;	
+			padding-left: 0;
+		}
+
+	.leadership_personnel {	
+		margin-bottom: 25px;
+		
+			.portrait {	
+				float: left;
+				margin-right: 15px;
+			}
+			
+			.name {	
+
+				margin-left: 95px;
+				padding-top: 7px;
+				font-family: @brandFont;
+				font-weight: 600;
+				text-transform: uppercase;
+				letter-spacing: 0.02em;
+			}
+			
+			.bio {
+				margin-left: 95px;
+				@media screen and (max-width: 600px) {
+					margin-left: 0;
+				}
+			}
+	}
+
+}
+
+
+.headline span {	
+	@media @desktop {
+		display: block;
+	}
+}

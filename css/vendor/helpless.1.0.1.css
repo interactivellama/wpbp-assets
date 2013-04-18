@@ -1,0 +1,505 @@
+#hl {
+  /************************************
+  * Meyer Reset
+  * http://meyerweb.com/eric/tools/css/reset/
+  ************************************/
+
+  /************************************
+  * Normalize by necolas
+  * https://github.com/necolas/normalize.css
+  ************************************/
+
+  /************************************
+  * Clearfix
+  *
+  * what?: Contains floats, for more info see h5bp.com/q.
+  *        Removes the need to add .clearfix as a class
+  *        to your elements.
+  *
+  ************************************/
+
+  /************************************
+  * Centered
+  *
+  * @what?: Center your object with an
+  *         automatic margin
+  *
+  * @params: width,      default = 960px
+  *
+  ************************************/
+
+  /************************************
+  * Border
+  *
+  * @what?: Add a 1px solid border
+  *        super quick.
+  *
+  * @params: colour,      default = #000
+  *
+  ************************************/
+
+  /************************************
+  * Opacity
+  *
+  * @what?: Add opacity to an HTML element that works
+  *         in all browsers including ie6+
+  *
+  * @params: value,      default = .5
+  *
+  ************************************/
+
+  /************************************
+  * Round all corners
+  *
+  * @what?: Rounds every corner equally
+  *
+  * @params: radius,      default = 5px
+  *
+  ************************************/
+
+  /************************************
+  * Rounded corners
+  *
+  * @what?: Round each corner individually
+  *
+  * @params: topLeft,     default = 5px
+  *          topRight,    default = 5px
+  *          bottomRight, default = 5px
+  *          bottomLeft,  default = 5px
+  *
+  ************************************/
+
+  /************************************
+  * Transition
+  *
+  * @what?: Defines a CSS3 transition
+  *
+  * @params: property,    default = all
+  *          duration,    default = .5s
+  *          ease,        default = linear
+  *          delay,       default = .0s
+  *
+  ************************************/
+
+  /************************************
+  * Drop shadow
+  *
+  * @what?: Adds an outer shadow to the
+  *         html element. To add a shadow
+  *         to text use #hl.text-shadow(...)
+  *
+  * @params: x,           default = 0px
+  *          y,           default = 1px
+  *          blur,        default = 1px
+  *          colour,      default = rgba(0, 0, 0, .6)
+  *
+  ************************************/
+
+  /************************************
+  * Inner shadow
+  *
+  * @what: Adds an inner shadow to the
+  *        html element.
+  *
+  * @params: x,           default = 0px
+  *          y,           default = 1px
+  *          blur,        default = 1px
+  *          colour,      default = rgba(0, 0, 0, .6)
+  *
+  ************************************/
+
+  /************************************
+  * Text shadow
+  *
+  * @what?: Adds an outer shadow to text
+  *
+  * @params: x,           default = 1px
+  *          y,           default = 1px
+  *          blur,        default = 1px
+  *          colour,      default = rgba(0, 0, 0, .6)
+  *
+  ************************************/
+
+  /************************************
+  * Background Gradient
+  *
+  * @what?: Adds a background gradient to
+  *         an HTML element
+  *
+  * @params: colourFrom,       default = #bbb
+  *          colourTo,         default = #f1f1f1
+  *          fallbackColour,   default = #f1f1f1
+  *          fallbackImageUrl, default = ''
+  *
+  ************************************/
+
+  /************************************
+  * Scale
+  *
+  * @what?: Defines a 2D scale transformation
+  *
+  * @params: amount,      default = 1
+  *
+  ************************************/
+
+  /************************************
+  * ScaleX
+  *
+  * @what?: Defines a scale transformation
+  *         by giving a value for the X-axis
+  *
+  * @params: x,           default = 1
+  *
+  ************************************/
+
+  /************************************
+  * ScaleY
+  *
+  * @what?: Defines a scale transformation
+  *         by giving a value for the Y-axis
+  *
+  * @params: y,           default = 1
+  *
+  ************************************/
+
+  /************************************
+  * Rotate
+  *
+  * @what?: Defines a 2D rotation, the angle
+  *         is specified in the parameter
+  *
+  * @params: degrees,     default = 90deg
+  *
+  ************************************/
+
+  /************************************
+  * RotateX
+  *
+  * @what?: Defines a 3D rotation along the X-axis
+  *
+  * @params: degrees,     default = 90deg
+  *
+  ************************************/
+
+  /************************************
+  * RotateY
+  *
+  * @what?: Defines a 3D rotation along the Y-axis
+  *
+  * @params: degrees,     default = 90deg
+  *
+  ************************************/
+
+  /************************************
+  * Skew
+  *
+  * @what?: Defines a 2D skew transformation
+  *         along the X- and the Y-axis
+  *
+  * @params: angleX,      default = 10deg
+  *          angleY,      default = 10deg
+  *
+  ************************************/
+
+  /************************************
+  * SkewX
+  *
+  * @what?: Defines a 2D skew transformation
+  *         along the X-axis
+  *
+  * @params: angleX,      default = 10deg
+  *
+  ************************************/
+
+  /************************************
+  * SkewY
+  *
+  * @what?: Defines a 2D skew transformation
+  *         along the Y-axis
+  *
+  * @params: angleY,      default = 10deg
+  *
+  ************************************/
+
+  /************************************
+  * Translate
+  *
+  * @what?: Defines a 2D translation
+  *
+  * @params: x,           default = 10px
+  *          y,           default = 10px
+  *
+  ************************************/
+
+  /************************************
+  * TranslateX
+  *
+  * @what?: Defines a translation, using
+  *         only the value for the X-axis
+  *
+  * @params: x,           default = 10px
+  *
+  ************************************/
+
+  /************************************
+  * TranslateY
+  *
+  * @what?: Defines a translation, using
+  *         only the value for the Y-axis
+  *
+  * @params: y,           default = 10px
+  *
+  ************************************/
+
+  /************************************
+  * Matrix
+  *
+  * @what?: Defines a 2D transformation,
+  *         using a matrix of six values
+  *
+  * @params: n1,          default = 0
+  *          n2,          default = 0
+  *          n3,          default = 0
+  *          n4,          default = 0
+  *          n5,          default = 0
+  *          n6,          default = 0
+  *
+  ************************************/
+
+  /************************************
+  * Grid
+  ************************************/
+
+  /***********************************
+  * TYPOGRAPHY
+  ***********************************/
+
+  /***********************************
+  * IMAGE
+  ***********************************/
+
+  /***********************************
+  * UI 
+  ***********************************/
+
+}
+#hl .grid {
+  /************************************
+    * Make
+    *
+    * @what?: Defines the base variables needed
+    *         for the HelpLess grid system.
+    *
+    * @params: @width,      default = 960
+    *          @colnum,     default = 16
+    *          @colgutter,  default = 10
+    *
+    ************************************/
+
+  /************************************
+    * 1200
+    *
+    * @what?: Predefined grid maker
+    *
+    ************************************/
+
+  /************************************
+    * 1120
+    *
+    * @what?: Predefined grid maker
+    *
+    ************************************/
+
+  /************************************
+    * 1040
+    *
+    * @what?: Predefined grid maker
+    *
+    ************************************/
+
+  /************************************
+    * 960
+    *
+    * @what?: Predefined grid maker
+    *
+    ************************************/
+
+  /************************************
+    * 880
+    *
+    * @what?: Predefined grid maker
+    *
+    ************************************/
+
+  /************************************
+    * 800
+    *
+    * @what?: Predefined grid maker
+    *
+    ************************************/
+
+  /************************************
+    * 720
+    *
+    * @what?: Predefined grid maker
+    *
+    ************************************/
+
+  /************************************
+    * 640
+    *
+    * @what?: Predefined grid maker
+    *
+    ************************************/
+
+  /************************************
+    * 560
+    *
+    * @what?: Predefined grid maker
+    *
+    ************************************/
+
+  /************************************
+    * 480
+    *
+    * @what?: Predefined grid maker
+    *
+    ************************************/
+
+  /************************************
+    * 400
+    *
+    * @what?: Predefined grid maker
+    *
+    ************************************/
+
+  /************************************
+    * 320
+    *
+    * @what?: Predefined grid maker
+    *
+    ************************************/
+
+  /************************************
+    * 240
+    *
+    * @what?: Predefined grid maker
+    *
+    ************************************/
+
+  /************************************
+    * Row
+    *
+    * @what?: Defines an element as a row.
+    *         clears all clearfixes all columns
+    *         directly inside.
+    *
+    ************************************/
+
+  /************************************
+    * Col
+    *
+    * @what?: Defines an element as a column.
+    *         Sets the width depending on the
+    *         supplied arguments and the width
+    *         set in .grid()
+    *
+    * @params: @colSpan,  default = 1
+    *
+    ************************************/
+
+}
+#hl .typo {
+  /************************************
+    * Serif
+    *
+    * @what?: Quickly set your font family
+    *         as a serif set
+    *
+    * @params: @webfont,  default = none
+    *
+    ************************************/
+
+  /************************************
+    * Serif
+    *
+    * @what?: Quickly set your font family
+    *
+    * @params: @webfont,  default = none
+    *
+    ************************************/
+
+  /************************************
+    * Columns
+    *
+    * @what?: Sets CSS3 columns within
+    *         block of html text
+    *
+    * @params: count,       default = 1
+    *          gap,         default = 10px
+    *
+    ************************************/
+
+}
+#hl .img {
+  /************************************
+    * Responsive
+    *
+    * @what?: Set image max-width: 100%
+    *
+    ************************************/
+
+  /************************************
+    * Framed
+    *
+    * @what?: Add a quick 10px frame to your image
+    *
+    ************************************/
+
+}
+#hl .ui {
+  /***********************************
+     * PREDEFINED THEMES
+     ***********************************/
+
+  /***********************************
+     * LISTS
+     ***********************************/
+
+}
+#hl .ui .themes {
+  /***********************************
+       * Theme: Light
+       *
+       * @what?: Quickly style the base elements
+       *         of your page
+       *
+       ***********************************/
+
+  /***********************************
+       * Theme: Dark
+       *
+       * @what?: Quickly style the base elements
+       *         of your page
+       *
+       ***********************************/
+
+}
+#hl .ui .list {
+  /***********************************
+       * Subtle
+       *
+       * @what?: Quickly removes the styling 
+       *         from a list
+       *
+       ***********************************/
+
+  /***********************************
+       * Horizontal
+       *
+       * @what?: Creates a horizontal list, 
+       *         useful for styling your site nav
+       *
+       ***********************************/
+
+}

@@ -1,0 +1,105 @@
+/*------------------------------------------  
+=MIXINS
+------------------------------------------*/
+@import "../vendor/3l/3L-mini.less";
+
+
+/************************************
+	For CSS image replacement fade on hover transition, 
+	Span child element fades on and off with mouse over.
+	
+	USAGE: #llama.spriteHoverFade(50px, 50px, '../img/sprites.png', '0px', '0px', '-50px', '0px');
+************************************/
+
+#llama {
+	.spriteHoverFade(@width: 10px, @height: 10px, @imageURL: '', @offsetX: 0px, @offsetY: 0px, @hoverOffsetX: 50px, @hoverOffsetY: 50px) {
+		background-position: ~"@{offsetX}" ~"@{offsetY}";
+		display: inline-block;
+		position: relative;
+		text-indent: -9999px;
+		width: @width;
+		height: @height;
+		background-image: url("@{imageURL}");
+		background-repeat: no-repeat;
+	
+		span {
+			position: absolute;
+			top: 0; 
+			left: 0; 
+			bottom: 0; 
+			right: 0;
+			background-image: url("@{imageURL}");
+			background-position: ~"@{hoverOffsetX}" ~"@{hoverOffsetY}";
+			#3l.opacity(0);
+			.transition(opacity, 0.5s, ease);
+		}
+	
+		&:hover span {
+			#3l.opacity(1);
+		}
+	
+	}
+
+	.transition(@attribute: 'all') {	
+		#3l.transition(@attribute 0.5s ease);
+	}
+
+	.nofilter {	
+		filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);	
+	}
+	
+	// image replace / hide text, used with <a> tags typically
+	.ir {	
+		text-indent: -9999px;
+		display: block;
+		font-size: 1px;	
+	}
+	
+	// rgba from hex and alpha
+	.bg-opacity(@color: @white, @alpha: 1) {
+		background-color: @color;
+		background-color: hsla(hue(@color), saturation(@color), lightness(@color), @alpha);
+	}
+	
+	// shorthand for uppercase transform
+	.upper {
+		text-transform: uppercase;
+	}
+
+
+}
+
+/************************************
+* Transition
+*
+* @what?: Defines a CSS3 transition
+*
+* @params: property,    default = all
+*          duration,    default = .5s
+*          ease,        default = linear
+*          delay,       default = .0s
+*
+************************************/
+.transition(@property: all, @duration: .5s, @ease: linear, @delay: .0s) {
+  -webkit-transition: @arguments;
+     -moz-transition: @arguments;
+       -o-transition: @arguments;
+          transition: @arguments;
+}
+  
+
+// Use rems with fallback to pixels: 1.6rem fallsback to 16px
+// This is based on an rem equalling 10px;
+.fontsize(@sizeValue){
+  @remValue: @sizeValue;
+  @pxValue: (@sizeValue * 10);
+  font-size: ~"@{pxValue}px"; 
+  font-size: ~"@{remValue}rem";
+}
+
+// Use pixels to generate rems font-size
+.font-size-rems(@px-size){
+	@rem-size: @px-size / @base-font-size;
+	font-size: ~"@{px-size}px";
+	font-size: ~"@{rem-size}rem";
+}

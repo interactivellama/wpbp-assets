@@ -1,0 +1,48 @@
+/*  
+Theme Name: 
+Author: Stephen M. James / Well Done Marketing
+Author URI: http://welldonemarketing.com
+*/
+
+/*------------------------------------------  
+=VENDOR IMPORTS
+------------------------------------------*/
+// Normalize Reset
+@import "wpbp-assets/css/vendor/normalize.less";								
+// Percentage-based grid for columns, http://semantic.gs/
+@import "wpbp-assets/css/vendor/semantic-grid/grid.less";				
+// Less mixin library https://github.com/mateuszkocz/3
+@import "wpbp-assets/css/vendor/3l/3L-mini.less";								l
+// https://github.com/imulus/retinajs
+//@import "wpbp-assets/cssvendor/retina.less";
+// https://github.com/harvesthq/chosen
+//@import "wpbp-assets/cssvendor/chosen/chosen.less";
+//bootstrap
+@import "wpbp-assets/css/vendor/bootstrap/bootstrap.less";
+// Formidable Forms
+@import "wpbp-assets/css/vendor/formible.less";
+
+/*------------------------------------------  
+=!CUSTOM IMPORTS
+------------------------------------------*/
+// Mixins, colors, fonts, media queries, sitewide styles
+@import "partials/themesetup.less";											
+
+// carousel	
+@import "partials/bx-slider.less";								
+
+//sectional
+@import "partials/forms.less";
+@import "partials/header.less";
+@import "partials/footer.less";
+@import "partials/sidebar.less";
+@import "partials/icons.less";
+@import "partials/comments.less";
+
+// blog pages including archive, single, and main feed
+@import "partials/blog.less";
+// Page templates (wrapped in body classes based on template file names, like .home, .page)
+@import "partials/pages.less";
+
+// misc
+@import "partials/misc.less";
