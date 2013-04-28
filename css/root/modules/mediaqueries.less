@@ -2,6 +2,11 @@
 // MEDIA QUERIES
 // ------------------------------------------*/
 
+// The following are defaults for media queries. Additional custom measurements may be needed for ceertain elements, although non-content-based breakpoints are quite convenient...
+
+// P = Portrait orientation
+// L = Landscape orientation
+
 // Proportional media queries using ems
 // That is browser base font size: ex. - 16px / 14pt / 1em
 // http://blog.cloudfour.com/the-ems-have-it-proportional-media-queries-ftw/
@@ -13,11 +18,11 @@
 @phoneValueMax: ( 599 / @bfs ) + 0em;
 @tabletPValue: ( 768 / @bfs ) + 0em;;
 @desktopValue: ( 768 / @bfs ) + 0em;;
-@desktopWideValue: ( 940 / @bfs ) + 0em;
+@desktopWideValue: ( 960 / @bfs ) + 0em;
 
 // Modified variables
-// These are derrivative variables so that breakpoints don't overlap
-// That is, the widest tablet width isn't the same as the smallest desktop width
+// These are derrivative variables so that breakpoints don't overlap.
+// That is, the widest tablet width isn't the same as the smallest desktop width.
 @onePixel: 0.063em;
 @desktopValueMinusOne: @desktopValue - @onePixel;
 @desktopWideValueMinusOne: @desktopWideValue - @onePixel;
@@ -62,26 +67,4 @@
  }
  
 Better is subjective. Embedded media queries do increase file size, but we are probably talking about 20 kilobytes per site. With compression, I would prefer a more readable, more object oriented (everything related to an HTML node is next to each other). If the CSS got too large, I would recommend breaking it into separate files and loading it in modules.
-*/
-
-
-
-/* I didn't want to delete the following, just yet:
-
-// breakpoints
-@phoneValueMax: 599px;
-@tabletPValue: 768px;
-@desktopValue: 768px;
-@desktopWideValue: 940px;
-
-//modified variables
-@desktopValueMinusOne: @desktopValue - 1px;
-@desktopWideValueMinusOne: @desktopWideValue - 1px;
-@phoneValueMin: 320px;
-@phoneValuePlusOne: (320px + 1px);
-@tabletPValueMinusOne: @tabletPValue - 1px;
-@tabletPValuePlusOne: @tabletPValue + 1px;
-@tabletValueMin: @phoneValueMax + 1px;
-
-
 */
