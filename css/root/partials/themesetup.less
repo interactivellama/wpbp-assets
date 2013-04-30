@@ -1,12 +1,31 @@
 // ------------------------------------------  
 // THEME SETUP
-// -- Variables and site-wide items typically changes once
+// -- Variables and site-wide items typically changes only once
 // ------------------------------------------
 
-/*------------------------------------------  
-=IMPORTS
-------------------------------------------*/
+// ------------------------------------------  
+// =COLORS
+// ------------------------------------------*/
 
+@black:	#000;
+@grayDark: #4a4a4a;
+@grayDarker: #2c2c2c;
+@gray: #dbdbdb;
+@grayMedium: #dddddd;
+@grayLight:	#f6f6f8;
+@grayLighter:	#ededed;
+@white:	#fff;
+
+
+// ------------------------------------------  
+// =TYPOGRAPHY
+// ------------------------------------------*/
+
+@serifFontFamily: Georgia, "Times New Roman", Times, serif;
+@sansFontFamily: Arial, sans-serif;
+
+@brandFont: Arial, sans-serif;
+@bodyFont: Arial, sans-serif;
 
 // ------------------------------------------  
 // SITEWIDE LAYOUT
@@ -14,14 +33,14 @@
 
 .pagewrapper {
   position: relative;
-  max-width: 940px;
+  max-width: 960px;
 
   margin-left: auto;
   margin-right: auto;
   
   // Fixed width for IE
-	.oldie & {
-			width: 940px;
+	.lt-ie9 & {
+			width: 960px;
 	}
     
 }
@@ -69,32 +88,6 @@
 	}	
 }
 
-
-// ------------------------------------------  
-// =COLORS
-// ------------------------------------------*/
-
-@red: #a52d2d;
-@redDark: #6D191B;
-@yellow: #fed106;
-@blueLight: #9594A7;
-
-@black:	#000;
-@grayDark: #4a4a4a;
-@grayDarker: #2c2c2c;
-@gray: #dbdbdb;
-@grayMedium: #dddddd;
-@grayLight:	#f6f6f8;
-@grayLighter:	#ededed;
-@white:	#fff;
-
-// ------------------------------------------  
-// =TYPOGRAPHY
-// ------------------------------------------*/
-@serifFontFamily: Georgia, "Times New Roman", Times, serif;
-@sansFontFamily: "myriad-pro", Arial, sans-serif;
-@brandFont: "myriad-pro", Arial, sans-serif;
-
 // ------------------------------------------  
 // BODY and hyperlinks
 // ------------------------------------------*/
@@ -141,7 +134,7 @@ html {
 body {
     color: #474747;
     margin: 0;
-    font-family: 'myriad-pro', Arial, sans-serif;
+    font-family: @bodyFont;
     line-height: 1.22;
     background: @grayLighter repeat 0px 0px;
 }
@@ -166,7 +159,7 @@ h2 {
 	font-family: @brandFont;
   font-weight:normal;
   color:#111111;
-  font-size: 18px;
+  .fontsize(1.8);
   margin-bottom:0.75em;
   font-weight: 700;
     padding: 0;
@@ -175,32 +168,32 @@ h3 {
 	font-family: @brandFont;
   font-weight:normal;
   color:#111111;
-  font-size:1.5em;
+  .fontsize(1.6);
   line-height:1;
   margin-bottom:1em;
-    padding: 0;
+  padding: 0;
 }
 h4 {
 	font-family: @brandFont;
   font-weight:normal;
   color:#111111;
-  font-size:1.2em;
+  .fontsize(1.5);
   line-height:1.25;
   margin-bottom:1.25em;
-    padding: 0;
+  padding: 0;
 }
 h5 {
 	font-family: @brandFont;
   font-weight:bold;
   color:#111111;
-  font-size:1em;
+  .fontsize(1.4);
   margin-bottom:1.5em;
 }
 h6 {
 	font-family: @brandFont;
   font-weight:bold;
   color:#111111;
-  font-size:1em;
+  .fontsize(1.4);
 }
 
 h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
