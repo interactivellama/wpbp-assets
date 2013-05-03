@@ -25,33 +25,84 @@
 =DOCUMENT OUTLINE
 --------------------------------------------
 
-	Everything is wrapped in a jquery call for encapsulation. Functions first, then main statements that call the functions.
+	Object literal with init function called on DOM ready
 
 */
 
-jQuery(function() {
-	"use strict";
-
+var MAIN = {
+	el: {	
+		body: $("body"),
+	} ,
 	// start here
+	init: function() {	
+		"use strict";
+		
+		//event debouncer http://paulirish.com/2009/throttled-smartresize-jquery-event-handler/
+		$(window).smartresize();
 
+		$(window).load( function() {
+		
+		});
+		
+		$(document).ready( function() {
+		
+		});
 
-/*	if (!Modernizr.touch) {
+		$(window).on("scroll", function() {
+		
+		});
+		
+		$(window).on("resize", function() {
+			
+		});	
 
-	} else {
+		this.initCarousel();
+		this.initElementBinding();
+		this.initFOUC();		
+		this.initTouch();
+		this.initPolyfills();
+		this.initHeader();
+		this.initFooter();
+		this.initSocial();
 
-	} */
-	
-	// add size to file upload button for FireFox
-	$('.frm_fileupload .file').attr('size', 10);
+	},	// end init, and should be alphbetically from here on out.
+	initCarousel: function() {	
+		"use strict";
+	},
+	initElementBinding: function() {	
+		"use strict";
+	},
+	initFooter: function() {
+		"use strict";
+	},
+	initFOUC: {	
+		"use strict";
+		// prevent Flash of unstyled content by fading it in, see http://www.bluerobot.com/web/css/fouc.asp/
+		$('.fouc').animate({opacity: 1}, 1000);	
+	},
+	initHeader: function() {
+		"use strict";
+	},	
+	initPolyfills: function() {
+		"use strict";
+		
+		// add size to file upload button for FireFox
+		$('.frm_fileupload .file').attr('size', 10);
+		
+	}, // end polyfills
+	initSocial: function() {	
+		"use strict";
+	},
+	initTouch: function() {	
+		"use strict";
+		
+		if (Modernizr.touch) {
+		
+		}
+	}	//end touch
 
-	// prevent Flash of unstyled content by fading it in
-	$('.fouc').animate({
-		opacity: 1
-	}, 1000);
+};
 
-});
-
-$(document).ready(function() {
-	"use strict";
-
+$(function(){
+	MAIN.init();
 });
