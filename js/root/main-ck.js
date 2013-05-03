@@ -75,7 +75,7 @@ var MAIN = {
 	initFooter: function() {
 		"use strict";
 	},
-	initFOUC: function() {	
+	initFOUC: {	
 		"use strict";
 		// prevent Flash of unstyled content by fading it in, see http://www.bluerobot.com/web/css/fouc.asp/
 		$('.fouc').animate({opacity: 1}, 1000);	
