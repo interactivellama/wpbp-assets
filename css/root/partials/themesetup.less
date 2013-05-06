@@ -3,6 +3,11 @@
 // -- Variables and site-wide items typically changes only once
 // ------------------------------------------
 
+@import "../wpbp-assets/css/vendor/3l/3L-mini.less";	
+@import "../wpbp-assets/css/modules/mixins.less";
+@import "../wpbp-assets/css/partials/custom-reset.less";
+@import "../modules/mediaqueries.less";
+
 // ------------------------------------------  
 // =COLORS
 // ------------------------------------------*/
@@ -16,6 +21,8 @@
 @grayLighter:	#ededed;
 @white:	#fff;
 
+@linkColor:	#000;
+@linkColorHover:	#000;
 
 // ------------------------------------------  
 // =TYPOGRAPHY
@@ -95,11 +102,11 @@
 a,
 a:visited,
 a:visited:focus {
-  color: @red;
+  color: @linkColor;
   #3l.transition(all, 0.5s, ease);
   
   &:hover, &:hover:visited {
-	  color: @grayDarker;
+	  color: @linkColorHover;
   }
 
   &:before, &:before {
@@ -128,7 +135,7 @@ a:visited:focus {
 }
 
 html {
-	font-size: 62.5%; // 10px = 1em
+	font-size: 62.5%; // so that 10px = 1em
 }
 
 body {

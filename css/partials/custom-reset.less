@@ -1,3 +1,5 @@
+@import "../vendor/3l/3L-mini.less";	
+
 /*------------------------------------------  
 =RESET (Additional)
 ------------------------------------------*/
@@ -59,10 +61,10 @@ address {
 
 // add transition to buttons and input fields
 input, button {	
-  .transition('background-color', .5s, ease);
+  #3l.transition('background-color', .5s, ease);
   
   &:hover, &:hover:visited {
-  	.transition('background-color', .5s, ease);
+  	#3l.transition('background-color', .5s, ease);
   }
 }
 

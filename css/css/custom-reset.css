@@ -1,0 +1,203 @@
+/*------------------------------------------  
+=RESET (Additional)
+------------------------------------------*/
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/sjames\/Dropbox\/www\/koorsenhomesecurity\/wp-content\/themes\/koorsenhomesecurity_wp\/assets\/wpbp-assets\/css\/partials\/custom-reset\.less}line{font-family:\000037}}
+address {
+  font-style: normal;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/sjames\/Dropbox\/www\/koorsenhomesecurity\/wp-content\/themes\/koorsenhomesecurity_wp\/assets\/wpbp-assets\/css\/partials\/custom-reset\.less}line{font-family:\0000312}}
+.hidden,
+.visuallyhidden {
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px);
+  /* IE6, IE7 */
+
+  clip: rect(1px, 1px, 1px, 1px);
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/sjames\/Dropbox\/www\/koorsenhomesecurity\/wp-content\/themes\/koorsenhomesecurity_wp\/assets\/wpbp-assets\/css\/partials\/custom-reset\.less}line{font-family:\0000329}}
+.centerblock {
+  margin-left: auto;
+  margin-right: auto;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/sjames\/Dropbox\/www\/koorsenhomesecurity\/wp-content\/themes\/koorsenhomesecurity_wp\/assets\/wpbp-assets\/css\/partials\/custom-reset\.less}line{font-family:\0000336}}
+.group {
+  zoom: 1;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/sjames\/Dropbox\/www\/koorsenhomesecurity\/wp-content\/themes\/koorsenhomesecurity_wp\/assets\/wpbp-assets\/css\/partials\/custom-reset\.less}line{font-family:\0000339}}
+.group:before,
+.group:after {
+  content: "";
+  display: table;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/sjames\/Dropbox\/www\/koorsenhomesecurity\/wp-content\/themes\/koorsenhomesecurity_wp\/assets\/wpbp-assets\/css\/partials\/custom-reset\.less}line{font-family:\0000344}}
+.group:after {
+  clear: both;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/sjames\/Dropbox\/www\/koorsenhomesecurity\/wp-content\/themes\/koorsenhomesecurity_wp\/assets\/wpbp-assets\/css\/partials\/custom-reset\.less}line{font-family:\0000349}}
+.clearfix {
+  zoom: 1;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/sjames\/Dropbox\/www\/koorsenhomesecurity\/wp-content\/themes\/koorsenhomesecurity_wp\/assets\/wpbp-assets\/css\/partials\/custom-reset\.less}line{font-family:\0000351}}
+.clearfix:before,
+.clearfix:after {
+  content: "";
+  display: table;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/sjames\/Dropbox\/www\/koorsenhomesecurity\/wp-content\/themes\/koorsenhomesecurity_wp\/assets\/wpbp-assets\/css\/partials\/custom-reset\.less}line{font-family:\0000355}}
+.clearfix:after {
+  clear: left;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/sjames\/Dropbox\/www\/koorsenhomesecurity\/wp-content\/themes\/koorsenhomesecurity_wp\/assets\/wpbp-assets\/css\/partials\/custom-reset\.less}line{font-family:\0000363}}
+input,
+button {
+  -webkit-transition: 'background-color', 0.5s, ease;
+  -moz-transition: 'background-color', 0.5s, ease;
+  -o-transition: 'background-color', 0.5s, ease;
+  transition: 'background-color', 0.5s, ease;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/sjames\/Dropbox\/www\/koorsenhomesecurity\/wp-content\/themes\/koorsenhomesecurity_wp\/assets\/wpbp-assets\/css\/partials\/custom-reset\.less}line{font-family:\0000366}}
+input:hover,
+button:hover,
+input:hover:visited,
+button:hover:visited {
+  -webkit-transition: 'background-color', 0.5s, ease;
+  -moz-transition: 'background-color', 0.5s, ease;
+  -o-transition: 'background-color', 0.5s, ease;
+  transition: 'background-color', 0.5s, ease;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/sjames\/Dropbox\/www\/koorsenhomesecurity\/wp-content\/themes\/koorsenhomesecurity_wp\/assets\/wpbp-assets\/css\/partials\/custom-reset\.less}line{font-family:\0000373}}
+.js .fouc {
+  opacity: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/sjames\/Dropbox\/www\/koorsenhomesecurity\/wp-content\/themes\/koorsenhomesecurity_wp\/assets\/wpbp-assets\/css\/partials\/custom-reset\.less}line{font-family:\0000379}}
+article img {
+  border: 1px solid #c1c1c1;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/sjames\/Dropbox\/www\/koorsenhomesecurity\/wp-content\/themes\/koorsenhomesecurity_wp\/assets\/wpbp-assets\/css\/partials\/custom-reset\.less}line{font-family:\0000383}}
+article p {
+  margin: 0 0 10px 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/sjames\/Dropbox\/www\/koorsenhomesecurity\/wp-content\/themes\/koorsenhomesecurity_wp\/assets\/wpbp-assets\/css\/partials\/custom-reset\.less}line{font-family:\0000387}}
+article ul {
+  list-style: square;
+  padding: 5px 0 10px 30px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/sjames\/Dropbox\/www\/koorsenhomesecurity\/wp-content\/themes\/koorsenhomesecurity_wp\/assets\/wpbp-assets\/css\/partials\/custom-reset\.less}line{font-family:\0000391}}
+article ul li {
+  margin-bottom: 8px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/sjames\/Dropbox\/www\/koorsenhomesecurity\/wp-content\/themes\/koorsenhomesecurity_wp\/assets\/wpbp-assets\/css\/partials\/custom-reset\.less}line{font-family:\00003101}}
+.primary img,
+.primary embed,
+.primary object,
+.primary video {
+  max-width: 100%;
+  width: auto;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/sjames\/Dropbox\/www\/koorsenhomesecurity\/wp-content\/themes\/koorsenhomesecurity_wp\/assets\/wpbp-assets\/css\/partials\/custom-reset\.less}line{font-family:\00003111}}
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/sjames\/Dropbox\/www\/koorsenhomesecurity\/wp-content\/themes\/koorsenhomesecurity_wp\/assets\/wpbp-assets\/css\/partials\/custom-reset\.less}line{font-family:\00003117}}
+a img {
+  border: none;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/sjames\/Dropbox\/www\/koorsenhomesecurity\/wp-content\/themes\/koorsenhomesecurity_wp\/assets\/wpbp-assets\/css\/partials\/custom-reset\.less}line{font-family:\00003121}}
+address {
+  font-style: normal;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/sjames\/Dropbox\/www\/koorsenhomesecurity\/wp-content\/themes\/koorsenhomesecurity_wp\/assets\/wpbp-assets\/css\/partials\/custom-reset\.less}line{font-family:\00003125}}
+nav a {
+  text-decoration: none;
+}
+/* http://css-tricks.com/things-it-might-be-funuseful-to-try-the-universal-selector-on/ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/sjames\/Dropbox\/www\/koorsenhomesecurity\/wp-content\/themes\/koorsenhomesecurity_wp\/assets\/wpbp-assets\/css\/partials\/custom-reset\.less}line{font-family:\00003130}}
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  background-repeat: no-repeat;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/sjames\/Dropbox\/www\/koorsenhomesecurity\/wp-content\/themes\/koorsenhomesecurity_wp\/assets\/wpbp-assets\/css\/partials\/custom-reset\.less}line{font-family:\00003137}}
+blockquote {
+  margin: 10px 10px 10px 10px;
+  font-style: italic;
+}
+/* Tables */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/sjames\/Dropbox\/www\/koorsenhomesecurity\/wp-content\/themes\/koorsenhomesecurity_wp\/assets\/wpbp-assets\/css\/partials\/custom-reset\.less}line{font-family:\00003144}}
+table {
+  border: 1px solid #ccc;
+  border-collapse: collapse;
+  border-spacing: 0;
+  font-size: inherit;
+  margin: 1.5em 10px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/sjames\/Dropbox\/www\/koorsenhomesecurity\/wp-content\/themes\/koorsenhomesecurity_wp\/assets\/wpbp-assets\/css\/partials\/custom-reset\.less}line{font-family:\00003152}}
+thead {
+  background: #ccc;
+  font-weight: 700;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/sjames\/Dropbox\/www\/koorsenhomesecurity\/wp-content\/themes\/koorsenhomesecurity_wp\/assets\/wpbp-assets\/css\/partials\/custom-reset\.less}line{font-family:\00003157}}
+th {
+  border-right: 1px solid #ccc;
+  border-bottom: 1px solid #eee;
+  padding: .25em 10px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/sjames\/Dropbox\/www\/koorsenhomesecurity\/wp-content\/themes\/koorsenhomesecurity_wp\/assets\/wpbp-assets\/css\/partials\/custom-reset\.less}line{font-family:\00003167}}
+tbody tr:nth-child(even) {
+  background: #f9f9f9;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/sjames\/Dropbox\/www\/koorsenhomesecurity\/wp-content\/themes\/koorsenhomesecurity_wp\/assets\/wpbp-assets\/css\/partials\/custom-reset\.less}line{font-family:\00003171}}
+td {
+  padding: 4px 10px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/sjames\/Dropbox\/www\/koorsenhomesecurity\/wp-content\/themes\/koorsenhomesecurity_wp\/assets\/wpbp-assets\/css\/partials\/custom-reset\.less}line{font-family:\00003175}}
+sub {
+  vertical-align: sub;
+  font-size: smaller;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/sjames\/Dropbox\/www\/koorsenhomesecurity\/wp-content\/themes\/koorsenhomesecurity_wp\/assets\/wpbp-assets\/css\/partials\/custom-reset\.less}line{font-family:\00003180}}
+sup {
+  vertical-align: super;
+  font-size: smaller;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/sjames\/Dropbox\/www\/koorsenhomesecurity\/wp-content\/themes\/koorsenhomesecurity_wp\/assets\/wpbp-assets\/css\/partials\/custom-reset\.less}line{font-family:\00003185}}
+.rtl {
+  direction: rtl;
+}
+/* Hide for both screenreaders and browsers and hide print only items */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/sjames\/Dropbox\/www\/koorsenhomesecurity\/wp-content\/themes\/koorsenhomesecurity_wp\/assets\/wpbp-assets\/css\/partials\/custom-reset\.less}line{font-family:\00003191}}
+.printonly {
+  display: none;
+  visibility: hidden;
+}
+/* Hide visually and from screenreaders, but maintain layout */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/sjames\/Dropbox\/www\/koorsenhomesecurity\/wp-content\/themes\/koorsenhomesecurity_wp\/assets\/wpbp-assets\/css\/partials\/custom-reset\.less}line{font-family:\00003198}}
+.invisible {
+  visibility: hidden;
+}
+/* floats  */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/sjames\/Dropbox\/www\/koorsenhomesecurity\/wp-content\/themes\/koorsenhomesecurity_wp\/assets\/wpbp-assets\/css\/partials\/custom-reset\.less}line{font-family:\00003204}}
+.left {
+  float: left;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/sjames\/Dropbox\/www\/koorsenhomesecurity\/wp-content\/themes\/koorsenhomesecurity_wp\/assets\/wpbp-assets\/css\/partials\/custom-reset\.less}line{font-family:\00003208}}
+.center {
+  text-align: center;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/sjames\/Dropbox\/www\/koorsenhomesecurity\/wp-content\/themes\/koorsenhomesecurity_wp\/assets\/wpbp-assets\/css\/partials\/custom-reset\.less}line{font-family:\00003212}}
+.right {
+  float: right;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/sjames\/Dropbox\/www\/koorsenhomesecurity\/wp-content\/themes\/koorsenhomesecurity_wp\/assets\/wpbp-assets\/css\/partials\/custom-reset\.less}line{font-family:\00003216}}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
