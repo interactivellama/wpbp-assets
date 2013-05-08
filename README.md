@@ -1,7 +1,8 @@
 wpbp-assets
 ===========
 
-WordPress Boilerplate (Assets: CSS and JavaScipt)
+WordPress Boilerplate 
+This repository contains assets to bootstrap or boilerplate projects. It contains many third-party plugins (JS and CSS) and utilizes LESS CSS for CSS pre-processing. Javascript files are setup to be concatenated and minified by CodeKit locally.
 
 ##Third-party libraries 
 - URL: /assets/wpbp-assets/css/vendor/
@@ -25,6 +26,7 @@ Copy these files to root CSS and do not import them.
 
 ##Javascript
 - URL: /assets/wpbp-assets/js/
+- Copy files in /js/root/ to /assets/
 
 # Third-party libraries 
 - URL: /assets/wpbp-assets/js/vendor/
