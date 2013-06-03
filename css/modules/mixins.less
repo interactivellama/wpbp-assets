@@ -11,6 +11,18 @@
 	USAGE: #llama.spriteHoverFade(50px, 50px, '../img/sprites.png', '0px', '0px', '-50px', '0px');
 ************************************/
 
+/* Justify inline block elemnts for grid hack http://www.barrelny.com/blog/text-align-justify-and-rwd/ */
+
+.jgroup {
+	text-align: justify;
+
+	&:after{
+	    content: '';
+	    display: inline-block;
+	    width: 100%;
+	}
+}
+
 #llama {
 	.spriteHoverFade(@width: 10px, @height: 10px, @imageURL: '', @offsetX: 0px, @offsetY: 0px, @hoverOffsetX: 50px, @hoverOffsetY: 50px) {
 		background-position: ~"@{offsetX}" ~"@{offsetY}";
