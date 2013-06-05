@@ -1,3 +1,4 @@
+
 /*------------------------------------------  
 =footer
 	------------------------------------------*/
@@ -30,6 +31,26 @@ footer.page {
 			display: block;
 			float: left;
 		}
+
+		li {	
+			margin-bottom: 10px;	
+
+			.lt-ie9 & {	
+				margin-bottom: 0px;
+			}
+			
+			.no-csscolumns &  {	
+				margin-bottom: 0px;	
+			}
+
+		}
+				
+		.dropdown-menu {
+			display: none;	
+		
+		}
+
+	}
 		
 		a, a:visited {
 			display: block;
