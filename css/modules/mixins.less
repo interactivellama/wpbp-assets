@@ -33,6 +33,17 @@
 }
 
 #llama {
+
+	// for SVG icons
+	.icon {	
+		display: inline-block;
+		background-position: 0 .2em;
+		background-repeat: no-repeat;
+		height: 1.2em;
+		width: 1.4em;
+		background-size: contain;
+	}
+
 	.spriteHoverFade(@width: 10px, @height: 10px, @imageURL: '', @offsetX: 0px, @offsetY: 0px, @hoverOffsetX: 50px, @hoverOffsetY: 50px) {
 		background-position: ~"@{offsetX}" ~"@{offsetY}";
 		display: inline-block;
