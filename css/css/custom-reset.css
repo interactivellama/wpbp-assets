@@ -1,3 +1,8 @@
+body {
+  /* Addresses a small issue in webkit: http://bit.ly/NEdoDq */
+
+  -webkit-backface-visibility: hidden;
+}
 /*------------------------------------------  
 =RESET (Additional)
 ------------------------------------------*/
@@ -41,8 +46,6 @@ address {
 input,
 button {
   -webkit-transition: 'background-color', 0.5s, ease;
-  -moz-transition: 'background-color', 0.5s, ease;
-  -o-transition: 'background-color', 0.5s, ease;
   transition: 'background-color', 0.5s, ease;
 }
 input:hover,
@@ -50,8 +53,6 @@ button:hover,
 input:hover:visited,
 button:hover:visited {
   -webkit-transition: 'background-color', 0.5s, ease;
-  -moz-transition: 'background-color', 0.5s, ease;
-  -o-transition: 'background-color', 0.5s, ease;
   transition: 'background-color', 0.5s, ease;
 }
 .js .fouc {

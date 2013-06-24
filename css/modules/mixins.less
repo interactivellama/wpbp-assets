@@ -1,7 +1,7 @@
 /*------------------------------------------  
 =MIXINS
 ------------------------------------------*/
-@import "../vendor/3l/3L-mini.less";
+@import "../vendor/3L/3L.less";
 
 
 /************************************
@@ -62,19 +62,19 @@
 			right: 0;
 			background-image: url("@{imageURL}");
 			background-position: ~"@{hoverOffsetX}" ~"@{hoverOffsetY}";
-			#3l.opacity(0);
+			#3L.opacity(0);
 			.transition(opacity, 0.5s, ease);
 		}
 	
 		&:hover span {
-			#3l.opacity(1);
+			#3L.opacity(1);
 		}
 	
 	}
 
 	// just shorthand
-	.transition(@attribute: 'all') {	
-		#3l.transition(@attribute 0.5s ease);
+	.transition(@attribute: all) {	
+		#3L.transition(@attribute 0.5s ease);
 	}
 
 	// run after background gradient to remove MS filter
@@ -98,6 +98,12 @@
 	// shorthand for uppercase transform
 	.upper {
 		text-transform: uppercase;
+	}
+	
+	.noflicker {
+		-webkit-transform-style: preserve-3d;
+		-o-transform-style: preserve-3d;
+		transform-style: preserve-3d;
 	}
 
 }
