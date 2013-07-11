@@ -137,6 +137,8 @@ body {
     font-family: @bodyFont;
     line-height: 1.22;
     background: @grayLighter repeat 0px 0px;
+		// Always show scroll for Webkit / Blink rendering engines, since they exclude scrollbar widths for media queries. This keeps browsers consistent
+  	overflow-y: scroll;
 }
 
 
