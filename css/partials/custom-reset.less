@@ -1,3 +1,9 @@
+@import "../vendor/3L/3L.less";	
+
+body { /* Addresses a small issue in webkit: http://bit.ly/NEdoDq */
+	-webkit-backface-visibility: hidden;
+}
+
 /*------------------------------------------  
 =RESET (Additional)
 ------------------------------------------*/
@@ -59,10 +65,10 @@ address {
 
 // add transition to buttons and input fields
 input, button {	
-  .transition('background-color', .5s, ease);
+  #3L.transition('background-color', .5s, ease);
   
   &:hover, &:hover:visited {
-  	.transition('background-color', .5s, ease);
+  	#3L.transition('background-color', .5s, ease);
   }
 }
 
@@ -97,6 +103,7 @@ article {
 // Make media responsive
 .primary {
 	img,
+	figure,
 	embed,
 	object,
 	video {
@@ -215,3 +222,6 @@ h1, h2, h3, h4, h5, h6 {
 	margin: 0;	
 	padding: 0;
 }
+
+
+

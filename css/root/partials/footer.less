@@ -1,3 +1,4 @@
+
 /*------------------------------------------  
 =footer
 	------------------------------------------*/
@@ -30,10 +31,30 @@ footer.page {
 			display: block;
 			float: left;
 		}
+
+		li {	
+			margin-bottom: 10px;	
+
+			.lt-ie9 & {	
+				margin-bottom: 0px;
+			}
+			
+			.no-csscolumns &  {	
+				margin-bottom: 0px;	
+			}
+
+		}
+				
+		.dropdown-menu {
+			display: none;	
+		
+		}
+
+	}
 		
 		a, a:visited {
 			display: block;
-			#3l.transition(all 0.5s ease);
+			#3L.transition(all 0.5s ease);
 						
 			&:hover, &:hover:visited {
 			}
@@ -48,7 +69,7 @@ footer.page {
 			color: #fff;
 			
 			&:hover, &:hover:visited {
-				color: lighten(@red, 10%);
+				color: lighten(@gray, 10%);
 			}
 		}
 	
@@ -67,7 +88,7 @@ footer.page {
 		
 		@media @desktop {
 			padding-left: 20px;
-			border-left: 2px solid darken(@grayMedium, 10%);
+			border-left: 2px solid darken(@tanDark@tanDark@tanDark, 10%);
 			padding-right: 103px;
 			width: auto;
 		}

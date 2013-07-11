@@ -3,6 +3,11 @@
 // -- Variables and site-wide items typically changes only once
 // ------------------------------------------
 
+@import "../wpbp-assets/css/vendor/3L/3L.less";	
+@import "../wpbp-assets/css/modules/mixins.less";
+@import "../wpbp-assets/css/partials/custom-reset.less";
+@import "../modules/mediaqueries.less";
+
 // ------------------------------------------  
 // =COLORS
 // ------------------------------------------*/
@@ -16,6 +21,8 @@
 @grayLighter:	#ededed;
 @white:	#fff;
 
+@linkColor:	#000;
+@linkColorHover:	#000;
 
 // ------------------------------------------  
 // =TYPOGRAPHY
@@ -95,27 +102,27 @@
 a,
 a:visited,
 a:visited:focus {
-  color: @red;
-  #3l.transition(all, 0.5s, ease);
+  color: @linkColor;
+  #3L.transition(all, 0.5s, ease);
   
   &:hover, &:hover:visited {
-	  color: @grayDarker;
+	  color: @linkColorHover;
   }
 
   &:before, &:before {
-    #3l.transition(all, 0.5s, ease);
+    #3L.transition(all, 0.5s, ease);
   }
   
   &:hover:before, &:hover:visited:before {
-    #3l.transition(all, 0.5s, ease);
+    #3L.transition(all, 0.5s, ease);
   }
 
   &:after, &:after {
-    #3l.transition(all, 0.5s, ease);
+    #3L.transition(all, 0.5s, ease);
   }
 
   &:hover:after, &:hover:visited:after {
-    #3l.transition(all, 0.5s, ease);
+    #3L.transition(all, 0.5s, ease);
   }
   
   &:active {
@@ -128,7 +135,7 @@ a:visited:focus {
 }
 
 html {
-	font-size: 62.5%; // 10px = 1em
+	font-size: 62.5%; // so that 10px = 1em
 }
 
 body {
