@@ -18,9 +18,12 @@ Author URI: http://welldonemarketing.com
 // https://github.com/harvesthq/chosen
 // @import "wpbp-assets/cssvendor/chosen/chosen.less";
 //bootstrap
-@import "../wpbp-assets/css/vendor/bootstrap/bootstrap.less";
+//@import "../wpbp-assets/css/vendor/bootstrap/bootstrap.less";
+
 // Formidable Forms
+// Don't forget to disable the default Formidable CSS
 @import "../wpbp-assets/css/vendor/formible.less";
+
 
 /*------------------------------------------  
 =!CUSTOM IMPORTS
@@ -31,15 +34,18 @@ Author URI: http://welldonemarketing.com
 // default wordpress content editor classes like .leftalign
 @import "../wpbp-assets/css/wordpress-editor.less";
 
-// carousel	
-@import "partials/bx-slider.less";								
+// BX-Slider carousel styles, more info at http://bxslider.com/
+//@import "partials/bx-slider.less";								
+
+// Small screen menu duplicated in footer
+//@import "partials/smallscreenfooternav.less";	// hide header and scroll to footer nav
 
 //sectional
+@import "partials/socialicons.less";
 @import "partials/forms.less";
 @import "partials/header.less";
 @import "partials/footer.less";
 @import "partials/sidebar.less";
-@import "partials/icons.less";
 @import "partials/comments.less";
 
 // blog pages including archive, single, and main feed

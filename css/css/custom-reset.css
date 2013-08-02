@@ -71,6 +71,10 @@ article ul {
 article ul li {
   margin-bottom: 8px;
 }
+article {
+  -ms-word-wrap: break-word;
+  word-wrap: break-word;
+}
 .primary img,
 .primary figure,
 .primary embed,
@@ -78,6 +82,7 @@ article ul li {
 .primary video {
   max-width: 100%;
   width: auto;
+  height: auto;
 }
 ul {
   list-style: none;
