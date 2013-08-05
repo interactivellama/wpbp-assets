@@ -1,6 +1,10 @@
+/* stops text from floating around (text wrap) around a flaoted image/element */
+.notextwrap {	
+	overflow:hidden;
+}
+
 body {
   /* Addresses a small issue in webkit: http://bit.ly/NEdoDq */
-
   -webkit-backface-visibility: hidden;
 }
 /*------------------------------------------  
