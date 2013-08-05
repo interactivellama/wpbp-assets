@@ -1,13 +1,20 @@
 @import "../vendor/3L/3L.less";	
 
-body { /* Addresses a small issue in webkit: http://bit.ly/NEdoDq */
+/*------------------------------------------  
+=RESET
+------------------------------------------*/
+
+/* stops text from floating around (text wrap) around a flaoted image/element */
+.notextwrap {	
+	overflow:hidden;
+}
+
+/* Addresses a small issue in webkit: http://bit.ly/NEdoDq */
+body { 
 	-webkit-backface-visibility: hidden;
 }
 
-/*------------------------------------------  
-=RESET (Additional)
-------------------------------------------*/
-
+// remove italics
 address {
   font-style: normal;
 }
@@ -73,7 +80,7 @@ input, button {
 }
 
 
-// prevent "flash of unstyled content" during page load fade in opacity with JavaScript
+// Prevent "flash of unstyled content" during page load. Fade in opacity with JavaScript.
 .js .fouc {	
 	opacity: 0;
 }
@@ -175,6 +182,7 @@ tbody {
 
 }
 
+// zebra stripes
 tbody tr:nth-child(even) {
   background: #f9f9f9;
 }
@@ -197,8 +205,7 @@ sup {
   direction: rtl;
 }
 
-/* Hide for both screenreaders and browsers and hide print only items */
-
+/* Hide for both screenreaders and browsers and hide print only items. See print.less */
 .printonly {
   display: none;
   visibility: hidden;
@@ -224,10 +231,8 @@ sup {
   float: right
 }
 
+// Remove ALL margina nd padding in headings, please add in a OOCSS way.
 h1, h2, h3, h4, h5, h6 {	
 	margin: 0;	
 	padding: 0;
 }
-
-
-

@@ -1,16 +1,14 @@
+/*------------------------------------------  
+=RESET
+------------------------------------------*/
 /* stops text from floating around (text wrap) around a flaoted image/element */
-.notextwrap {	
-	overflow:hidden;
+.notextwrap {
+  overflow: hidden;
 }
-
+/* Addresses a small issue in webkit: http://bit.ly/NEdoDq */
 body {
-  /* Addresses a small issue in webkit: http://bit.ly/NEdoDq */
-
   -webkit-backface-visibility: hidden;
 }
-/*------------------------------------------  
-=RESET (Additional)
-------------------------------------------*/
 address {
   font-style: normal;
 }
@@ -148,7 +146,7 @@ sup {
 .rtl {
   direction: rtl;
 }
-/* Hide for both screenreaders and browsers and hide print only items */
+/* Hide for both screenreaders and browsers and hide print only items. See print.less */
 .printonly {
   display: none;
   visibility: hidden;
