@@ -51,10 +51,10 @@ button {
   -webkit-transition: 'background-color', 0.5s, ease;
   transition: 'background-color', 0.5s, ease;
 }
-input:hover,
-button:hover,
-input:hover:visited,
-button:hover:visited {
+.no-touch input:hover,
+.no-touch button:hover,
+.no-touch input:hover:visited,
+.no-touch button:hover:visited {
   -webkit-transition: 'background-color', 0.5s, ease;
   transition: 'background-color', 0.5s, ease;
 }
