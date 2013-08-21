@@ -11,7 +11,11 @@
 	USAGE: #llama.spriteHoverFade(50px, 50px, '../img/sprites.png', '0px', '0px', '-50px', '0px');
 ************************************/
 
-/* Justify inline block elements for a percentage grid without specifying margins: LESS mixin http://www.barrelny.com/blog/text-align-justify-and-rwd/ */
+.lastmargin {
+	&:last-child {	
+		margin-right: 0;
+	}
+}
 
 .serif {	
 	font-family: @serifFontFamily;
@@ -20,6 +24,8 @@
 .sans {	
 	font-family: @sansFontFamily;
 }
+
+/* Justify inline block elements for a percentage grid without specifying margins: LESS mixin http://www.barrelny.com/blog/text-align-justify-and-rwd/ */
 
 .jgroup {
 	text-align: justify;
